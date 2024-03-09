@@ -7,7 +7,6 @@ import org.nildefonso.githuballstars.service.GitHubAllStarsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -23,7 +22,6 @@ import java.util.stream.Collectors;
 
 @Service
 @ControllerAdvice
-@Configuration
 public class GitHubAllStarsImpl implements GitHubAllStarsService {
     private static final Logger log = LoggerFactory.getLogger(GitHubAllStarsImpl.class);
 
